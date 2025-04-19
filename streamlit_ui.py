@@ -2,6 +2,8 @@ import streamlit as st
 import requests
 import os
 
+os.environ["STREAMLIT_WATCH_FILE_SYSTEM"] = "false"
+
 API_URL = os.getenv("API_BASE")  
 
 st.set_page_config(page_title="Document QA System", layout="centered")
